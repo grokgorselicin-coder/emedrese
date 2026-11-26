@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Medrese Gizlilik Politikası</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: calm, formal, trustworthy — a policy people should actually read.
+   IDEA: a page from the app's own medrese: green ground, gold arch framing the text.
+   PICTURE: the app's arch-and-book mark, large, in the header band.
+   COLOUR and TYPE: deep medrese green, warm paper, gold accent; Amiri titles, Source Sans 3 body.
+   LAYOUT: header band with mark + title, language switch, one calm reading column, summary table first. */
+:root{color-scheme:light dark;--bg:light-dark(#fbf7ef,#11201b);--paper:light-dark(#fffcf6,#162a23);--ink:light-dark(#1d2420,#e9efe9);--muted:light-dark(#56625b,#a9b8ae);--green:#1e5b4b;--deep:#174a3d;--gold:#c9a45a;--line:light-dark(#e6dcc8,#2a4238)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.62 "Source Sans 3",system-ui,sans-serif;overflow-x:clip}
+header{background:radial-gradient(120% 140% at 70% 20%,#2a7462,var(--deep));color:#fbf7ef;padding:clamp(28px,5vw,60px) max(5vw,16px) clamp(24px,4vw,44px)}
+.hd{max-width:860px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:24px;align-items:center}
+h1{font:700 clamp(32px,5vw,48px)/1.05 Amiri,serif;margin:0 0 10px;text-wrap:balance}
+.sub{margin:0;color:#e3dccb;max-width:52ch}
+.mark{width:150px;height:150px}
+nav{display:flex;gap:8px;margin-top:22px;flex-wrap:wrap}
+nav button{font:600 15px "Source Sans 3",sans-serif;padding:10px 18px;min-height:44px;border-radius:999px;border:1px solid #e3c07a88;background:transparent;color:#fbf7ef;cursor:pointer}
+nav button[aria-pressed=true]{background:#e3c07a;color:#173f34;border-color:#e3c07a}
+nav button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+main{max-width:860px;margin:0 auto;padding:clamp(24px,4vw,48px) max(5vw,16px) 64px}
+section[lang]{display:none}section[lang].on{display:block}
+h2{font:700 26px/1.2 Amiri,serif;color:light-dark(var(--green),#cfe6da);margin:36px 0 8px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:8px 0 18px}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.yes{color:light-dark(#8a5a12,#e3c07a);font-weight:600}.no{color:light-dark(var(--green),#9bd3c1);font-weight:600}
+.small{color:var(--muted);font-size:14.5px}
+a{color:light-dark(var(--green),#9bd3c1)}
+@media(max-width:600px){.hd{grid-template-columns:1fr}.mark{width:96px;height:96px;order:-1}table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;color:var(--muted)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hd">
+    <div>
+      <h1 id="t">E-Medrese Gizlilik Politikası</h1>
+      <p class="sub" id="s">Kur'an'ı kelime kelime öğrenmek için hazırlanan E-Medrese (E-Madrasah) uygulamasının hangi bilgileri nasıl kullandığını burada sade bir dille anlatıyoruz.</p>
+      <nav aria-label="Dil / Language">
+        <button type="button" data-l="tr" aria-pressed="true">Türkçe</button>
+        <button type="button" data-l="en" aria-pressed="false">English</button>
+      </nav>
+    </div>
+    <svg class="mark" viewBox="18 14 72 76" aria-hidden="true">
+      <g transform="translate(54 54) scale(0.74) translate(-54 -47.4)">
+        <path d="M30,80 L30,52 C30,40 40,31 54,24 C68,31 78,40 78,52 L78,80" fill="none" stroke="#E3C07A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M54,22.5 L54,18.5" stroke="#E3C07A" stroke-width="2.6" stroke-linecap="round"/><circle cx="54" cy="16.8" r="2" fill="#E3C07A"/>
+        <path d="M54,74 C47,70 40,69.5 34,70.5 L34,51 C40,50 47,50.5 54,54.5 Z" fill="#FBF7EF"/>
+        <path d="M54,74 C61,70 68,69.5 74,70.5 L74,51 C68,50 61,50.5 54,54.5 Z" fill="#F0E9DC"/>
+        <path d="M38.5,56.5 C42.5,56 46.5,56.6 50.5,58 M38.5,61 C42.5,60.5 46.5,61.1 50.5,62.5 M57.5,58 C61.5,56.6 65.5,56 69.5,56.5 M57.5,62.5 C61.5,61.1 65.5,60.5 69.5,61" fill="none" stroke="#A0782E" stroke-width="1.3" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+</header>
+<main>
+<section lang="tr" class="on">
+  <p class="small">Yürürlük tarihi: 26 Kasım 2026 · Geliştirici: Anıl Taşlıçay</p>
+  <h2>Kısaca</h2>
+  <div class="card">
+    <table class="stack">
+      <thead><tr><th>Konu</th><th>Durum</th><th>Açıklama</th></tr></thead>
+      <tbody>
+        <tr><td>Hesap / üyelik</td><td class="no">Yok</td><td>Uygulama hesap açmanızı istemez; adınızı, e-postanızı ya da telefonunuzu almaz.</td></tr>
+        <tr><td>Notlar, yer imleri, ayarlar</td><td class="no">Yalnız cihazınızda</td><td>Post-it'ler, çizimler, kaldığınız yerler ve tercihleriniz telefonunuzda saklanır, bize gönderilmez.</td></tr>
+        <tr><td>Reklamlar</td><td class="yes">Google AdMob</td><td>Reklam gösterimi için Google, cihazın reklam kimliği gibi bilgileri işleyebilir.</td></tr>
+        <tr><td>Ödemeler</td><td class="yes">Google Play</td><td>Destek ve "Reklamları kaldır" ödemelerini Google Play alır; kart bilgileriniz bize ulaşmaz.</td></tr>
+        <tr><td>Konum, kamera, kişiler</td><td class="no">Kullanılmaz</td><td>Bu izinler istenmez.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h2>Cihazınızda kalan bilgiler</h2>
+  <p>Okuma ayarlarınız, aldığınız notlar ve çizimler, yer imleriniz, ders ilerlemeniz ve kullanım sayaçları (ör. ipuçlarının ve destek penceresinin ne zaman gösterileceği) yalnız cihazınızda tutulur. Android'in kendi yedekleme özelliği açıksa bu veriler, Google hesabınızın yedeğine Google tarafından dahil edilebilir. Uygulamayı sildiğinizde bu veriler de silinir.</p>
+  <h2>Reklamlar (Google AdMob)</h2>
+  <p>E-Medrese'yi ücretsiz tutabilmek için, yalnız dil bilgisi özellikleri (kelime ve terim açıklamaları, dersler) kullanılırken, açıklama kapandıktan sonra arada bir tam ekran kısa bir reklam gösteriyoruz; her reklamdan sonra 30 dakika reklam gösterilmez. Kur'an'ı sadece sayfa çevirerek okumak tamamen reklamsızdır. İsterseniz reklamları bir kerelik bir ödemeyle kaldırabilirsiniz. Reklamları Google AdMob sağlar. Google, reklam sunmak, ölçmek ve kötüye kullanımı önlemek için cihazın reklam kimliği, IP adresi, cihaz ve uygulama bilgileri gibi verileri işleyebilir. Avrupa Ekonomik Alanı, Birleşik Krallık ve benzeri bölgelerde ilk açılışta izniniz sorulur; seçiminizi Ayarlar › Destek ve reklamlar › Reklam gizlilik seçenekleri'nden değiştirebilirsiniz. Reklamlar genel kitleye uygun içerikle sınırlandırılmıştır.</p>
+  <p class="small">Google'ın verileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
+  <h2>Ödemeler (Google Play)</h2>
+  <p>Geliştiriciye destek ve "Reklamları kaldır" satın alımları Google Play Faturalandırma ile yapılır. Ödeme bilgilerinizi Google işler; biz yalnız hangi ürünün satın alındığı bilgisini alırız, böylece örneğin reklamları kapatabiliriz.</p>
+  <h2>Çocuklar</h2>
+  <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamaz.</p>
+  <h2>Haklarınız ve iletişim</h2>
+  <p>Biz sizinle ilgili sunucularımızda veri tutmuyoruz. Reklam verileriyle ilgili haklarınızı Google hesabınızdaki reklam ayarlarından ve yukarıdaki gizlilik seçeneklerinden kullanabilirsiniz. Sorularınız için: <strong id="mail-tr">anil.taslicay@gmail.com</strong></p>
+  <h2>Değişiklikler</h2>
+  <p>Bu politika güncellenirse yeni hâli bu sayfada, yürürlük tarihiyle birlikte yayımlanır.</p>
+</section>
+
+<section lang="en">
+  <p class="small">Effective date: 26 November 2026 · Developer: Anıl Taşlıçay</p>
+  <h2>At a glance</h2>
+  <div class="card">
+    <table class="stack">
+      <thead><tr><th>Topic</th><th>Status</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr><td>Account</td><td class="no">None</td><td>The app never asks you to sign up and does not collect your name, email or phone number.</td></tr>
+        <tr><td>Notes, bookmarks, settings</td><td class="no">On your device only</td><td>Sticky notes, drawings, reading positions and preferences stay on your phone and are not sent to us.</td></tr>
+        <tr><td>Ads</td><td class="yes">Google AdMob</td><td>To serve ads, Google may process information such as your device's advertising ID.</td></tr>
+        <tr><td>Payments</td><td class="yes">Google Play</td><td>Support and "Remove ads" payments are handled by Google Play; we never see your card details.</td></tr>
+        <tr><td>Location, camera, contacts</td><td class="no">Not used</td><td>These permissions are never requested.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h2>Information that stays on your device</h2>
+  <p>Your reading settings, notes and drawings, bookmarks, lesson progress and usage counters (for example, when to show tips or the support message) are stored only on your device. If Android's own backup is turned on, Google may include this data in your Google account backup. Uninstalling the app deletes it.</p>
+  <h2>Ads (Google AdMob)</h2>
+  <p>To keep E-Madrasah free, we occasionally show a short full-screen ad only after a grammar feature (word or term explanation, lesson) is closed, and no further ads for 30 minutes after each one. Simply reading the Qur'an and turning pages is completely ad-free. You can remove ads with a one-time purchase. Ads are provided by Google AdMob. Google may process data such as the advertising ID, IP address and device and app information to serve and measure ads and prevent abuse. In the EEA, the UK and similar regions you are asked for consent on first launch; you can change your choice in Settings › Support and ads › Ad privacy options. Ads are limited to content suitable for general audiences.</p>
+  <p class="small">How Google uses data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
+  <h2>Payments (Google Play)</h2>
+  <p>Developer support and "Remove ads" purchases use Google Play Billing. Google processes your payment details; we only receive which product was purchased, so that, for example, ads can be turned off.</p>
+  <h2>Children</h2>
+  <p>The app is not directed at children under 13 and does not knowingly collect personal data from children.</p>
+  <h2>Your rights and contact</h2>
+  <p>We do not keep any data about you on our servers. You can exercise your choices about ad data in your Google account's ad settings and in the privacy options above. Questions: <strong id="mail-en">anil.taslicay@gmail.com</strong></p>
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published on this page with its effective date.</p>
+</section>
+</main>
+<script>
+{
+  const T={tr:["E-Medrese Gizlilik Politikası","Kur'an'ı kelime kelime öğrenmek için hazırlanan E-Medrese (E-Madrasah) uygulamasının hangi bilgileri nasıl kullandığını burada sade bir dille anlatıyoruz."],
+           en:["E-Madrasah Privacy Policy","How the E-Madrasah (E-Medrese) app, made for learning the Qur'an word by word, uses information, in plain words."]};
+  const set=l=>{
+    document.documentElement.lang=l;
+    document.querySelectorAll('section[lang]').forEach(s=>s.classList.toggle('on',s.lang===l));
+    document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+    document.getElementById('t').textContent=T[l][0];document.getElementById('s').textContent=T[l][1];
+    document.title=T[l][0];
+  };
+  document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>{set(b.dataset.l);try{history.replaceState(null,'','#'+b.dataset.l)}catch(e){}}));
+  const h=location.hash.slice(1);
+  set(h==='en'?'en':(h==='tr'?'tr':((navigator.language||'tr').toLowerCase().startsWith('tr')?'tr':'en')));
+}
+</script>
+</body>
+</html>
